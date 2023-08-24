@@ -143,10 +143,21 @@
 </body>
 </html>
 
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
-  df-cx="true"
-  chat-title="vignesh_google_store"
-  agent-id="845e3dfc-98d2-498d-89f6-f46de1b5acf2"
-  language-code="en"
-></df-messenger>
+  agent-id="a854fbe9-4da8-49e3-af7d-084bf8271736"
+  language-code="en">
+  <df-messenger-chat-bubble
+   chat-title="Wikki - Google Store"
+   bot-writing-text="..."
+   placeholder-text="PLACEHOLDER_TEXT">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
